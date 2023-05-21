@@ -30,6 +30,14 @@ export const App = () => {
     setFeedback(prevState => ({
       ...prevState,
       [option]: prevState[option] + 1,
+      //  'good': prevState['good'] + 1
+      // prevState - это предыдущее состояние объекта feedback. Например, предположим, что prevState равно { good: 2, neutral: 1, bad: 0 }.
+
+      //prevState['good'] - это обращение к значению ключа 'good' в объекте prevState. В нашем примере prevState['good'] равно 2.
+
+      //prevState['good'] + 1 - это выражение увеличивает значение ключа 'good' на 1. В нашем примере это будет 2 + 1, что равно 3.
+
+      //'good': prevState['good'] + 1 - это запись свойства объекта с ключом 'good' и новым значением, которое на 1 больше предыдущего значения. В нашем примере это будет 'good': 3.
     }));
     // this.setState(prevState => {
     //   return { [option]: prevState[option] + 1 };
